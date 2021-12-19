@@ -4,9 +4,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      background-color: black;
+      color: white;
+    }
+    header h1, nav {
+      margin: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: black;
+    }
+    nav a {
+      display: block;
+      margin: 10px;
+      font-size: 20px;
+      color: white;
+      padding: 3px;
+    }
+    .content, .fourohfour {
+      display: flex;
+      gap: 5px;
+      padding: 20px;
+      background: linear-gradient(#000, #3e3e3e);
+      height: 100vh;
+    }
+    .content main {
+      color: white;
+      margin: 10px;
+    }
+    .content aside {
+      color: white;
+      max-width: 350px;
+      margin: 10px;
+    }
+    .fourohfour {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+
+    }
+  </style>
   <title>Simple Node Site | 404</title>
 </head>
 <body>
-  <h1>404 PAGE!!!</h1>
+  <header>
+    <h1>INDEX PAGE!!!</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact-me">Contact</a>
+    </nav>
+  </header>
+    <main class="fourohfour">
+     <h1>404</h1>
+     <h2>Whoops! this page doesn't exist</h2>
+    </main>
 </body>
 </html>
